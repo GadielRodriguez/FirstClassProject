@@ -5,39 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image and YouTube Video</title>
     <style>
-        /* Make the body take up the whole viewport and set basic styling */
         body {
             height: 100vh;
             display: flex;
-            justify-content: center; /* Centers horizontally */
-            align-items: center; /* Centers vertically */
+            justify-content: center; 
+            align-items: center; /
             margin: 0;
             background: #42b883; 
         }
 
-        /* Style for the video and image container */
+        
         .content-container {
             width: 80%;
-            max-width: 600px; /* Maximum width for the container */
+            max-width: 600px; /
             background: #347474; 
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow for a card-like effect */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
             text-align: center;
         }
 
-        /* Style for the image */
+        
         .image-container img {
-            width: 100%; /* Set the image to be responsive */
-            max-width: 50px; /* Optional: maximum width for image */
+            width: 100%; 
+            max-width: 50px; 
             border-radius: 10px;
-            margin-bottom: 20px; /* Adds space between the image and the video */
+            margin-bottom: 20px; 
         }
 
-        /* Style for the video */
+        
         iframe {
             width: 100%;
-            height: 315px; /* Standard YouTube video height */
+            height: 315px; 
         }
 
         p{
@@ -48,15 +47,14 @@
 </head>
 <body>
 
-    <!-- Container for the image and video -->
     <div class="content-container">
-        <!-- Image above the video -->
+        
         <div class="image-container">
             <p>Good Old Vines(RIP)</p>
             <img src="https://th.bing.com/th/id/OIP.JkR1kLw_xc8b088N6Fm-7wHaEo?w=270&h=180&c=7&r=0&o=5&pid=1.7" alt="Sample Image">
         </div>
 
-        <!-- Embed YouTube video below the image -->
+        
         <div class="video-container">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/U3ipGb_IOVA?si=Cz6XtQXLtWs_qqVT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
