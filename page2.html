@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>5 Divs with Hover Effect, Images, and Background Change</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+            margin: 0;
+            background-color: #f0f0f0;
+            transition: background-color 0.3s ease; 
+        }
+
+        
+        .title {
+            font-size: 100px; 
+            color:cadetblue; 
+            font-weight: bold; 
+            margin-bottom: 250px; 
+        }
+
+        
+        .container {
+            display: flex;
+            justify-content: space-between; 
+            flex-wrap: nowrap; 
+            width: 90%; 
+            max-width: 1200px; 
+            gap: 20px; 
+        }
+
+        
+        .box-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            width: 250px; 
+        }
+
+        .box {
+            width: 250px;
+            height: 250px;
+            background-color: #3498db;
+            border-radius: 10px;
+            overflow: hidden; 
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+        }
+
+        
+        .box:hover {
+            transform: scale(1.1); 
+            background-color: #2ecc71; 
+        }
+
+        
+        .name {
+            margin-top: 10px; 
+            font-size: 18px;
+            color: black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="title">My Top Five Animes</h1>
+    <h4 class="">(Hover over the Images)</h4>
+
+    
+    <div class="container">
+        <div class="box-container">
+            <div class="box" onmouseover="changeBodyColor('#455d7a')" onmouseout="resetBodyColor()">
+                <img src="https://th.bing.com/th/id/OIP.z3BH_jYDPw8wU9h8bGgcewHaEK?w=312&h=180&c=7&r=0&o=5&pid=1.7" alt="Image 1">
+            </div>
+            <p class="name">Gurren Laugen</p>
+        </div>
+
+        <div class="box-container">
+            <div class="box" onmouseover="changeBodyColor('#dc2f2f')" onmouseout="resetBodyColor()">
+                <img src="https://news.otakukart.com/wp-content/uploads/2019/12/IMG_20191217_015014-1920x1459.jpg" alt="Image 2">
+            </div>
+            <p class="name">ChainSaw man</p>
+        </div>
+
+        <div class="box-container">
+            <div class="box" onmouseover="changeBodyColor('#f8b400')" onmouseout="resetBodyColor()">
+                <img src="https://www.hindustantimes.com/ht-img/img/2023/09/29/1600x900/Evil-Saitama_1695998069122_1695998079247.png" alt="Image 3">
+            </div>
+            <p class="name">One Punch man</p>
+        </div>
+
+        <div class="box-container">
+            <div class="box" onmouseover="changeBodyColor('#a55233')" onmouseout="resetBodyColor()">
+                <img src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2023/08/attack-on-titan-10-scout-regiment-members-with-the-most-kills-ranked.jpg" alt="Image 4">
+            </div>
+            <p class="name">Attack On Titan</p>
+        </div>
+
+        <div class="box-container">
+            <div class="box" onmouseover="changeBodyColor('#1d1716')" onmouseout="resetBodyColor()">
+                <img src="https://animeanime.jp/imgs/ogp_f/96866.jpg" alt="Image 5">
+            </div>
+            <p class="name">Driffters</p>
+        </div>
+    </div>
+
+    <script>
+        function changeBodyColor(color) {
+            document.body.style.backgroundColor = color;
+        }
+
+        
+        function resetBodyColor() {
+            document.body.style.backgroundColor = '#f0f0f0'; 
+        }
+    </script>
+
+</body>
+</html>
